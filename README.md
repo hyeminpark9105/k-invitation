@@ -1,2 +1,31 @@
 # k-invitation
-K-Invitation 은 한국 스타일의 다양한 행사에 맞는 모바일 초대장 생성 플랫폼입니다. 결혼식, 돌잔치, 집들이, 생일 파티 등 특별한 순간을 더 아름답게 공유할 수 있도록 설계되었습니다.  / K-Invitation is a mobile invitation platform tailored for various Korean-style events. It is designed to beautifully share special moments such as weddings, first-birthday parties, housewarmings, and birthdays.
+K-Invitation 은 한국 스타일의 다양한 행사에 맞는 모바일 초대장 생성 플랫폼입니다. 결혼식, 돌잔치, 집들이, 생일 파티 등 특별한 순간을 더 아름답게 공유할 수 있도록 설계되었습니다.
+
+
+## 📌 Commit Message 규칙 (Gitmoji 10종)
+
+프로젝트의 모든 커밋 메시지는 다음 규칙을 따릅니다.  
+`이모지 + 한글 설명` 형식으로 작성해주세요.
+
+| 이모지 | 의미 | 예시 |
+|--------|------|------|
+| ✨ `:sparkles:` | 새로운 기능 추가 | `✨ RSVP 폼 기능 추가` |
+| 🐛 `:bug:` | 버그 수정 | `🐛 모바일 뷰에서 버튼 클릭 오류 수정` |
+| 🎨 `:art:` | UI/스타일 개선 | `🎨 초대장 Hero 섹션 애니메이션 다듬기` |
+| 📝 `:memo:` | 문서 수정/추가 | `📝 README에 배포 방법 추가` |
+| 🔧 `:wrench:` | 설정 변경 | `🔧 Next.js Pages 배포 설정 수정` |
+| ♻️ `:recycle:` | 코드 리팩터링 | `♻️ 폼 검증 로직 단순화` |
+| ✅ `:white_check_mark:` | 테스트 추가/수정 | `✅ RSVP 제출 테스트 추가` |
+| 📦 `:package:` | 패키지 추가/업데이트 | `📦 tailwindcss 업그레이드` |
+| 🚀 `:rocket:` | 배포 관련 변경 | `🚀 GitHub Pages 자동 배포 설정` |
+| 🔒 `:lock:` | 보안 관련 수정 | `🔒 HTTPS 적용 및 폼 데이터 보호` |
+
+---
+
+### ✅ 사용 예시
+```bash
+git commit -m "✨ RSVP 폼 기능 추가"
+git commit -m "🎨 초대장 UI 컬러톤 변경"
+git commit -m "🚀 Pages 워크플로우 설정"
+```
+
