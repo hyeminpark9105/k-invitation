@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
     "postbuild": "copy .\\out\\index.html .\\out\\404.html",
     "preview": "npx serve ./out",
     "deploy": "npm run build && gh-pages -d out",
