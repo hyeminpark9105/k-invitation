@@ -1,6 +1,6 @@
 import type { NextConfig } from 'next'
 
-const repo = 'k-invitation' // <-- 본인 리포 이름
+const repo = 'k-invitation'
 const isProd = process.env.NODE_ENV === 'production'
 
 const nextConfig: NextConfig = {
