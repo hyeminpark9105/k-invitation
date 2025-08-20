@@ -17,6 +17,7 @@ jobs:
           cache: 'npm'
       - run: npm ci
       - run: npm run build
+      - run: cp out/index.html out/404.html  # 404 대비(리눅스 셸)
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
