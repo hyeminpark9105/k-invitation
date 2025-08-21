@@ -18,7 +18,7 @@ jobs:
       - run: npm ci
       - run: npm run build
         env:
-          NODE_ENV: secrets.NODE_ENV
+          NODE_ENV: production
       - run: cp out/index.html out/404.html  # 404 대비(리눅스 셸)
       - uses: actions/upload-pages-artifact@v3
         with:
