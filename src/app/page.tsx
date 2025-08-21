@@ -2,10 +2,10 @@
 
 import { useEffect, useState } from 'react'
 import data from '@/../config.json'
-import Image from 'next/image'
+// import Image from 'next/image'
 import { Gamja_Flower, Noto_Sans_KR } from 'next/font/google'
 import { Phone, MessageSquare, Ellipsis, MessageCircle, Link as LinkIcon } from 'lucide-react'
-import CalendarSep2025 from '@/components/CalendarSep2025'
+// import CalendarSep2025 from '@/components/CalendarSep2025'
 import Gallery from '@/components/Gallery'
 
 const gamja = Gamja_Flower({ subsets: ['latin'], weight: '400' })
