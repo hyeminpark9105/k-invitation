@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import data from '@/../config.json'
+import Image from 'next/image'
 import { Gamja_Flower, Noto_Sans_KR } from 'next/font/google'
 import { Phone, MessageSquare, Ellipsis, MessageCircle, Link as LinkIcon } from 'lucide-react'
 import CalendarSep2025 from '@/components/CalendarSep2025'
@@ -173,7 +174,7 @@ export default function Home() {
               <p className={`${gamja.className} text-2xl text-[rgb(255,148,148)]`}>♥</p>
             </div>
           </div>
-          <img
+          <Image 
             src="/baby_main.jpg"
             alt="Invitation"
             className="w-[300px] h-[380px] object-cover rounded-xl"
@@ -211,7 +212,7 @@ export default function Home() {
       {/* 초대글 */}
       <div className="max-w-xl w-full text-center space-y-6 p-6 bg-white">
         <div className="p-6 bg-white space-y-3">
-          <h1 className={`${gamja.className} text-2xl text-[rgb(255,148,148)]`}>Invitation</h1>
+          <h1 className={`${gamja.className} text-2xl text-[rgba(110, 71, 71, 1)]`}>Invitation</h1>
           <p className={`${noto400.className} text-[15px] py-6`}>
             보듬어 안기도 조심스러웠는데 <br>
             </br>어느덧 건강하게 자라 첫 생일을 맞이하였습니다.<br></br><br>
