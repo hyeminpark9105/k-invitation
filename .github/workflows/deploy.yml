@@ -15,10 +15,10 @@ jobs:
         with:
           node-version: '18'
           cache: 'npm'
-      - run: npm ci --include=dev
-      - run: echo "NEXT_PUBLIC_BASE_PATH=/k-invitation" >> .env.production
+      - run: npm ci
       - run: npm run build
-      # - run: npm run export
+        env:
+          NODE_ENV: secrets.NODE_ENV
       - run: cp out/index.html out/404.html  # 404 대비(리눅스 셸)
       - uses: actions/upload-pages-artifact@v3
         with:
