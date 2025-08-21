@@ -174,7 +174,7 @@ export default function Home() {
               <p className={`${gamja.className} text-2xl text-[rgb(255,148,148)]`}>♥</p>
             </div>
           </div>
-          <Image 
+          <img 
             src="/baby_main.jpg"
             alt="Invitation"
             className="w-[300px] h-[380px] object-cover rounded-xl"
