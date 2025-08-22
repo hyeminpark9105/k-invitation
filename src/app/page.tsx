@@ -239,13 +239,13 @@ export default function Home() {
             <p className={`${noto700.className} text-lg`}>최동현</p>
             <Ellipsis size={24} className="text-[rgb(255,227,225)]" />
             <a
-              href="tel:010-2763-7164"
+              href="tel:010-1234-1234"
               className="flex items-center space-x-0 px-2 py-2 text-[rgb(255,148,148)]"
             >
               <Phone size={20} className="text-[rgb(255,148,148)]" />
             </a>
             <a
-              href="sms:010-2763-7164"
+              href="sms:010-1234-1234"
               className="flex items-center space-x-0 px-2 py-2 text-[rgb(255,148,148)]"
             >
               <MessageSquare size={20} className="text-[rgb(255,148,148)]" />
@@ -257,13 +257,13 @@ export default function Home() {
             <p className={`${noto700.className} text-lg`}>박혜민</p>
             <Ellipsis size={24} className="text-[rgb(255,227,225)]" />
             <a
-              href="tel:010-2774-3737"
+              href="tel:010-1234-1234"
               className="flex items-center space-x-0 px-2 py-2 text-[rgb(255,148,148)]"
             >
               <Phone size={20} className="text-[rgb(255,148,148)]" />
             </a>
             <a
-              href="sms:010-2774-3737"
+              href="sms:010-1234-1234"
               className="flex items-center space-x-0 px-2 py-2 text-[rgb(255,148,148)]"
             >
               <MessageSquare size={20} className="text-[rgb(255,148,148)]" />
