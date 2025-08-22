@@ -2,7 +2,8 @@
 
 import { useEffect, useState } from 'react'
 import data from '@/../config.json'
-// import Image from 'next/image'
+import basePath from '@/../next.config'
+import Image from 'next/image'
 import { Gamja_Flower, Noto_Sans_KR } from 'next/font/google'
 import { Phone, MessageSquare, Ellipsis, MessageCircle, Link as LinkIcon } from 'lucide-react'
 // import CalendarSep2025 from '@/components/CalendarSep2025'
@@ -174,9 +175,11 @@ export default function Home() {
               <p className={`${gamja.className} text-2xl text-[rgb(255,148,148)]`}>♥</p>
             </div>
           </div>
-          <img 
+          <Image 
             src="/baby_main.jpg"
             alt="Invitation"
+            width={300}
+            height={380}
             className="w-[300px] h-[380px] object-cover rounded-xl"
             style={{
               WebkitMaskImage: `
@@ -285,8 +288,11 @@ export default function Home() {
       <div className="max-w-xl w-full text-center space-y-6 p-6 bg-white">
         <h1 className={`${gamja.className} text-2xl text-[rgb(255,148,148)] bg-white`}>Location</h1>
         <div className="flex justify-center my-6 bg-white">
-          <img
+          <Image
             src="/loc.jpg"
+            alt="loc"
+            width={280}
+            height={280}
             className="w-[280px]"
           />
         </div>
@@ -294,9 +300,11 @@ export default function Home() {
         <div className="flex justify-center my-6 bg-white"><Phone size={14} className="m-2"/> <p>0507-1308-6116</p></div>
 
         <div className="flex justify-center my-6">
-          <img
+          <Image
             src="/location.png"
-            alt="Invitation"
+            alt="location"
+            width={280}
+            height={280}
             className="w-[280px] h-[280px] object-cover"
           />
         </div>
