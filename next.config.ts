@@ -7,7 +7,9 @@ const nextConfig: NextConfig = {
   output: 'export',          // 정적 export
   images: { 
     unoptimized: true,
-    loader: 'custom', // 👈 커스텀 로더 사용 
+    // loader: 'custom', // 👈 커스텀 로더 사용 
+    loader: 'imgix',
+    path: 'https://hyeminpark9105.github.io/k-invitation/',
   }, // next/image 정적 처리
   basePath: isProd ? `/${repo}` : undefined,
   assetPrefix: isProd ? `/${repo}/` : undefined,
