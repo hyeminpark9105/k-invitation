@@ -5,11 +5,14 @@ import data from '@/../config.json'
 import Image from 'next/image'
 import { Gamja_Flower, Noto_Sans_KR } from 'next/font/google'
 import { Phone, MessageSquare, Ellipsis, MessageCircle, Link as LinkIcon } from 'lucide-react'
+// import CalendarSep2025 from '@/components/CalendarSep2025'
 import Gallery from '@/components/Gallery'
 
 const gamja = Gamja_Flower({ subsets: ['latin'], weight: '400' })
 const noto400 = Noto_Sans_KR({ subsets: ['latin'], weight: '400' })
 const noto700 = Noto_Sans_KR({ subsets: ['latin'], weight: '700' })
+const imgLoader = ({ src }: { src: string }) =>
+  `${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}${src}`
 
 export default function Home() {
   const { title, names, date, datetime, venue1, venue2, map, note } = data
@@ -173,7 +176,8 @@ export default function Home() {
               <p className={`${gamja.className} text-2xl text-[rgb(255,148,148)]`}>♥</p>
             </div>
           </div>
-          <Image 
+          <Image
+            loader={imgLoader}
             src="/baby_main.jpg"
             alt="Invitation"
             width={300}
@@ -287,6 +291,7 @@ export default function Home() {
         <h1 className={`${gamja.className} text-2xl text-[rgb(255,148,148)] bg-white`}>Location</h1>
         <div className="flex justify-center my-6 bg-white">
           <Image
+            loader={imgLoader}
             src="/loc.jpg"
             alt="loc"
             width={280}
@@ -295,10 +300,11 @@ export default function Home() {
           />
         </div>
         <div className="flex justify-center my-6 bg-white"><p>경기도 군포시 고산로 599</p></div>
-        <div className="flex justify-center my-6 bg-white"><Phone size={14} className="m-2"/> <p>0507-1308-6116</p></div>
+        <div className="flex justify-center my-6 bg-white"><Phone size={14} className="m-2" /> <p>0507-1308-6116</p></div>
 
         <div className="flex justify-center my-6">
           <Image
+            loader={imgLoader}
             src="/location.png"
             alt="location"
             width={280}
