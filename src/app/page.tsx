@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import data from '@/../config.json'
-import Image from 'next/image'
+import Image, { ImageLoaderProps } from 'next/image'
 import { Gamja_Flower, Noto_Sans_KR } from 'next/font/google'
 import { Phone, MessageSquare, Ellipsis, MessageCircle, Link as LinkIcon } from 'lucide-react'
 // import CalendarSep2025 from '@/components/CalendarSep2025'
@@ -11,8 +11,14 @@ import Gallery from '@/components/Gallery'
 const gamja = Gamja_Flower({ subsets: ['latin'], weight: '400' })
 const noto400 = Noto_Sans_KR({ subsets: ['latin'], weight: '400' })
 const noto700 = Noto_Sans_KR({ subsets: ['latin'], weight: '700' })
-const imgLoader = ({ src }: { src: string }) =>
-  `${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}${src}`
+// const imgLoader = ({ src }: { src: string }) =>
+//   `${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}${src}`
+
+const imgLoader = ({ src }: ImageLoaderProps) => {
+  const base = process.env.NEXT_PUBLIC_BASE_PATH ?? ''
+  // public/loc.jpg → /k-invitation/loc.jpg
+  return `${base}${src.startsWith('/') ? src : `/${src}`}`
+}
 
 export default function Home() {
   const { title, names, date, datetime, venue1, venue2, map, note } = data
